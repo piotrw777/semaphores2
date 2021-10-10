@@ -11,11 +11,5 @@ $(OUT): main1.c
 $(OUT2): main2.c
 	$(CC) $(FLAGS) -o $(OUT2) $<
 
-first:	first.c
-	$(CC) $(FLAGS) -o $@ $<
-
-second:	second.c
-	$(CC) $(FLAGS) -o $@ $<
-
 clean:
-	rm -fv prog* first second
+	rm -fv prog* 
